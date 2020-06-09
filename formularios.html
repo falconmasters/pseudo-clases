@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pseudoelementos CSS</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link rel="stylesheet" href="css/formularios.css">
+</head>
+<body>
+	<div class="contenedor">
+		<h1 class="titulo">Pseudo-clases para formularios</h1>
+
+		<form class="formulario" action="">
+			<div class="grupo">
+				<label>:focus</label>
+				<input class="nombre" type="text" placeholder="Nombre">
+			</div>
+
+			<div class="grupo">
+				<label>:disabled</label>
+				<input class="id" type="text" placeholder="Id: 1" disabled>
+			</div>
+
+			<div class="grupo">
+				<label>:valid / :invalid</label>
+				<input  class="correo" type="email" placeholder="correo@correo.com" value="correo">
+			</div>
+
+			<div class="grupo">
+				<label>:required</label>
+				<input class="mensaje" type="text" placeholder="Mensaje" value="Hola" required>
+			</div>
+			
+			<div class="grupo">
+				<label>:checked</label>
+				<div class="radio">
+					<label><input type="checkbox" id="terminos">Acepto los terminos y condiciones</label>
+				</div>
+			</div>
+			
+			<div class="grupo checkbox">
+				<label>:default</label>
+				<div class="checkbox">
+					<label><input type="radio" name="opcion" id="1" value="1">Opción  1</label>
+					<label><input type="radio" name="opcion" id="2" value="2" checked>Opción  2</label>
+					<label><input type="radio" name="opcion" id="3" value="3">Opción  3</label>
+				</div>
+			</div>
+
+			<div class="grupo">
+				<label>:in-range</label>
+				<input class="edad" type="number" placeholder="101" min="1" max="100" value="1">
+			</div>
+
+			<button type="submit" class="boton">Registrarse</button>
+		</form>
+	</div>
+</body>
+</html>

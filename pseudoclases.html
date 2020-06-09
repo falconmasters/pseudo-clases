@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pseudoelementos CSS</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link rel="stylesheet" href="css/pseudoclases.css">
+</head>
+<body>
+	<div class="contenedor">
+		<h1 class="titulo">Pseudo-clases</h1>
+
+
+		<div class="grupo">
+			<label>:active / :link / :visited / :hover</label>
+			<a class="enlace" href="#">Ir a Google!</a>
+			<a class="enlace" href="https://www.google.com">Ir a Google!</a>
+		</div>
+		
+
+		<div class="grupo">
+			<label>:first-child / :last-child</label>
+			<div class="parrafos">
+				<p>Soy el primer parrafo!</p>
+				<p>Soy el segundo parrafo!</p>
+				<p>Soy el tercer parrafo!</p>
+			</div>
+		</div>
+		
+
+		<div class="grupo">
+			<label>:first-of-type / :last-of-type</label>
+			<div class="elementos">
+				<div>Hola soy un div!</div>
+				<p>Hola soy un parrafo!</p>
+				<span>Hola soy un span!</span>
+				<p>Hola soy otro parrafo!</p>
+				<div>Hola soy otro div!</div>
+			</div>
+		</div>
+
+		
+		<div class="grupo">
+			<label>:nth-child() / :nth-last-child</label>
+			<ul class="lista">
+				<li>Soy la opción #1</li>
+				<li>Soy la opción #2</li>
+				<li>Soy la opción #3</li>
+				<li>Soy la opción #4</li>
+				<li>Soy la opción #5</li>
+				<li>Soy la opción #6</li>
+				<li>Soy la opción #7</li>
+				<li>Soy la opción #8</li>
+			</ul>
+		</div>
+
+
+		<div class="grupo">
+			<label>:nth-of-type() / :nth-last-of-type</label>
+			<div class="lista2">
+				<div>Hola soy un div!</div>
+				<p>Hola soy un parrafo!</p>
+				<p>Hola soy otro parrafo!</p>
+				<span>Hola soy un span!</span>
+				<p>Hola soy otro parrafo!</p>
+				<div>Hola soy otro div!</div>
+			</div>
+		</div>
+		
+
+		<div class="grupo">
+			<label>:only-child</label>
+			<div class="lista3">
+				<p>Hola, soy el unico hijo de esta lista!</p>
+			</div>
+		</div>
+
+
+		<div class="grupo">
+			<label>:only-of-type</label>
+			<div class="lista4">
+				<div>Hoy, soy un div.</div>
+				<p>Hola, soy el unico parrafo de esta lista!</p>
+				<div>Hoy, soy un div.</div>
+				<div>Hoy, soy un div.</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
