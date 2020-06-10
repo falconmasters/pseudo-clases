@@ -56,24 +56,80 @@ label {
 }
 
 /* ? ------------- PSEUDO-CLASES ------------- */
+.enlace:active {
+	background: #000;
+}
+
+.enlace:link {
+	color: blue;
+}
+
+.enlace:visited {
+	color: #b1b1b1;
+}
+
+.enlace:hover {
+	color: orange;
+}
 
 
 /* ? --- --- --- --- PARRAFOS --- --- --- --- */
+.parrafos p:first-child {
+	background: var(--azul);
+	color: #fff;
+}
+
+.parrafos p:last-child {
+	background: #000;
+	color: #fff;
+}
 
 
 /* ? --- --- --- --- ELEMENTOS --- --- --- --- */
+.elementos p:first-of-type {
+	background: var(--azul);
+	color: #fff;
+}
+
+.elementos div:last-of-type {
+	background: #000;
+	color: #fff;
+}
 
 
 /* ? --- --- --- --- LISTA --- --- --- --- */
+.lista :nth-child(2){
+	background: var(--azul);
+	color: #fff;
+}
 
+.lista :nth-last-child(3){
+	background: #000;
+	color: #fff;
+}
 
 
 /* ? --- --- --- --- LISTA 2 --- --- --- --- */
+.lista2 p:nth-of-type(2) {
+	background: var(--azul);
+	color: #fff;
+}
 
+.lista2 div:nth-last-of-type(2) {
+	background: #000;
+	color: #fff;
+}
 
 
 /* ? --- --- --- --- LISTA 3 --- --- --- --- */
-
+.lista3 p:only-child {
+	background: var(--azul);
+	color: #fff;
+}
 
 
 /* ? --- --- --- --- LISTA 4 --- --- --- --- */
+.lista4 p:only-of-type {
+	background: var(--azul);
+	color: #fff;
+}
